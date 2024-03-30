@@ -48,30 +48,6 @@
         <ion-icon name="close-outline"></ion-icon>
       </button>
 
-      <!-- <div class="newsletter-img">
-        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div> -->
-
-      <!-- <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>Anon</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form> -->
-
       </div>
 
     </div>
@@ -130,7 +106,7 @@
 
         <ul class="header-social-container">
 
-          <li>
+          <!-- <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
@@ -154,7 +130,7 @@
             </a>
           </li>
 
-        </ul>
+        </ul> -->
 
         <!-- <div class="header-alert-news">
           <p>
@@ -196,11 +172,7 @@
 
         <div class="header-search-container">
 
-          <!-- <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
- 
-          <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
-          </button> -->
+      
 <p style="color: #333; font-size:xx-large; font-weight: 400;font-family: cursive;text-align: center;">Empowering your journey with quality parts and unparalleled service </p>
         </div>
 
@@ -277,7 +249,7 @@
               </ul>
 
           <li class="menu-category">
-            <a href="./mirrors.html" class="menu-title">Mirrors</a>
+            <a href="mirrors.html" class="menu-title">Mirrors</a>
 
             <ul class="dropdown-list">
 
@@ -1259,7 +1231,7 @@
 
           <div class="product-main">
 
-            <h2 class="title">Automotive Lamps</h2>
+            <h2 class="title">Truck Mirrors</h2>
 
             <div class="product-grid">
 
@@ -1267,48 +1239,61 @@
 
                 <div class="showcase-banner">
 <br>
-                  <img src="./assets/images/products/H4.png" alt="H4" width="30%" class="product-img default">
-                  <img src="./assets/images/products/H4.png" alt="H4" width="30%" class="product-img hover">
+                  <img src="./assets/images/products/gs-1690.png" alt="H4" width="30%" class="product-img default">
+                  <img src="./assets/images/products/gs-1690.png" alt="H4" width="30%" class="product-img hover">
                   <p class="showcase-badge angle pink">new</p>
-                  <!-- <p class="showcase-badge">15%</p>
+                  <!-- <p class="showcase-badge">15%</p>-->
                     
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div> -->
-
                 </div>
 
-                <div class="showcase-content">
-
-                  <a href="#" class="showcase-category">H4 lamp</a>
-
-                  <a href="#">
-                    <h3 class="showcase-title">Voltage: 12 V <br> Wattage: 100/90 W</h3>
-                  </a>
-
-                  <div class="price-box">
-                    <p class="price">Rs 100.00</p>
-                    <!-- <del>$75.00</del> -->
-                  </div>
-
+                <!-- <div class="showcase-content"> -->
+  
+                  <div class="showcase-content">
+                    
+                    <a href="#" class="showcase-category">GS-1690</a>
+                    <button class="quick-view-button">Quick View</button> 
+                    <a href="#">
+                        <h3 class="showcase-title"> For Isuzu NKP NHR truck parts</h3>
+                    </a>
+                
+                    <div class="price-box">
+                        <p class="price">Rs 180.00</p>
+                    </div>
                 </div>
+                
+                <div id="popup" class="popup">
+                  <!-- Larger images go here -->
+                  <img src="./assets/images/products/gs-1690_v2.png" alt="H4" width="70%">
+                  <img src="./assets/images/products/gs-1690_v2.png" alt="H4" width="70%">
+                  <!-- Add more images if needed -->
+              </div>
+    
+              <style>
+                /* CSS for the popup */
+                .popup {
+                    display: none; /* Hide the popup by default */
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    z-index: 9999; /* Ensure the popup appears above other content */
+                }
+            </style>
+            
+            <script>
+              // JavaScript function to open the popup
+              document.addEventListener('click', function(event) {
+                  var button = event.target.closest('.quick-view-button');
+                  if (button) {
+                      var popup = button.parentElement.nextElementSibling;
+                      popup.style.display = 'block';
+                  }
+              });
+          </script>
+                <!-- </div> -->
 
               </div>
 

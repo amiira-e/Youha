@@ -2287,7 +2287,7 @@ footer {
     color: var(--sonic-silver);
     font-size: var(--fs-7);
     text-transform: capitalize;
-    transition: var(--transition-timing);
+    /* transition: var(--transition-timing); */
   }
 
   .panel-list-item a:hover { color: var(--salmon-pink); }
@@ -2332,7 +2332,7 @@ footer {
     font-size: var(--fs-7);
     text-transform: capitalize;
     padding: 4px 20px;
-    transition: var(--transition-timing);
+    /* transition: var(--transition-timing); */
   }
 
   .dropdown-list .dropdown-item a:hover { color: var(--salmon-pink); }
